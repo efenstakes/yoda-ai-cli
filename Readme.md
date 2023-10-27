@@ -1,9 +1,10 @@
 # Yoda AI CLI:
 ## Your Wise Companion In Your CLI
 
-<img src="/showcase/cli-2.png" width="100%" />
-
 Welcome to Yoda AI, your ultimate AI companion! Yoda is designed to be your go-to solution for a wide range of tasks, from answering questions and providing insights to offering assistance and entertainment. In this document, we'll introduce you to the exciting world of Yoda AI and guide you through getting started.
+
+
+<img src="/showcase/cli-2.png" width="100%" />
 
 
 
