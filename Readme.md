@@ -1,7 +1,7 @@
 # Yoda AI CLI:
 ## Your Wise Companion In Your CLI
 
-<img src="/api-n/showcase/ai.jpeg" width="100%" />
+<img src="./showcase/cli.png" width="100%" />
 
 Welcome to Yoda AI, your ultimate AI companion! Yoda is designed to be your go-to solution for a wide range of tasks, from answering questions and providing insights to offering assistance and entertainment. In this document, we'll introduce you to the exciting world of Yoda AI and guide you through getting started.
 
@@ -27,6 +27,8 @@ Yoda AI is a cutting-edge artificial intelligence designed to enhance your daily
 ## Tech Used
 
 Python: Python is the language of choice for this Yoda AI's codebase. It's a perfect language for building AI powered products with ease.
+
+Langchain: LangChain is a framework designed to simplify the creation of applications using large language models. As a language model integration framework. It allows building complex AI and personal assistants that can supercharge productivity.
 
 
 ## Extras
