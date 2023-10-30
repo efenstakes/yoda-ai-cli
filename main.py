@@ -17,7 +17,7 @@ def main():
         exit(1)
 
     # create chat instance
-    llm = ChatOpenAI(temperature=0.5)
+    llm = ChatOpenAI(temperature=0.5, streaming=True)
 
     # create conversation chain with a summary buffer memory
     # this will ensure we dont lose context
@@ -28,18 +28,46 @@ def main():
         verbose=False
     )
 
+    # print cli instructions
+    print_cli_instructions()
+
     # keep yoda terminal running until user quits with Ctrl^ + c
     while True:
-        prompt = input("Ask Yoda 👉 ")
+        print(f"Ask Yoda", color="magenta")
         print()
+        # prompt = input("Ask Yoda 👉 ")
+        prompt = input("👉 ")
+        print()
+
+        # check if we should quit
+        if prompt.strip().lower() == "quit" or prompt.strip().lower() == "q":
+            quit_cli()
+
+        # get reply from llm
         reply = conversation.predict(input=prompt)
 
-        print(f"Reply", color="magenta")
-        print(f"{reply}", color="green")
-        print()
-        print()
+        print_prompt_reply(prompt=prompt, reply=reply)
 
         
+# print cli instructions
+def print_cli_instructions():
+    print()
+    print("Remember you can always type 'quit' or 'q' to exit the YODA CLI", color="black")
+    print()
+
+# closes the cli
+def quit_cli():
+    print("Yoda AI CLI is shutting down now", color="green")
+    print("Bye Bye ~ Yoda", color="magenta")
+    print()
+    exit(0)
+
+# prints answer
+def print_prompt_reply(prompt: str, reply: str):
+    print(f"Reply", color="magenta")
+    print(f"{reply}", color="green")
+    print()
+    print()
 
 
 if __name__ == '__main__':
