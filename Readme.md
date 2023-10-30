@@ -31,6 +31,44 @@ Python: Python is the language of choice for this Yoda AI's codebase. It's a per
 
 Langchain: LangChain is a framework designed to simplify the creation of applications using large language models. As a language model integration framework. It allows building complex AI and personal assistants that can supercharge productivity.
 
+## Adding Yoda To CLI
+You can easily add yoda to your cli to use in your terminal or your favorite IDE. First, clone the `Yoda AI CLI` code from github.
+
+```sh
+git clone https://github.com/efenstakes/yoda-ai-cli.git
+cd yoda-ai-cli
+```
+
+Install the dependencies
+``` sh
+pip3 install -r requirements.txt
+```
+
+And yes, if you are wondering, you won't have to create an environment because we need to access the dependencies and `CLI` globally. Create a `.env` file and add `OPENAI_API_KEY` variable with your `openai key`.
+
+Get path to the folder you just cloned `Yoda` to:
+
+```sh
+pwd
+```
+
+Cd to your root folder:
+
+```sh
+cd ~
+```
+
+For some people, you may have to edit .zshrc or .bashrc. You can use vi or your favorite IDE or text editor. Add an alias with your name of choice, in my case it's `yodaai`.
+
+```sh
+alias yodaai = <path-to-the-yodaai-cli-project-directory>
+```
+
+Replace `<path-to-the-yodaai-cli-project-directory>` with the directory you cloned yoda cli into.
+
+
+
+You're done. Enjoy `Yoda CLI` now.
 
 ## Extras
 I build a similar API to this in Golang and NodeJS. You can find it here in my github.
