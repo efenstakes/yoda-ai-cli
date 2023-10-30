@@ -4,7 +4,7 @@
 Welcome to Yoda AI, your ultimate AI companion! Yoda is designed to be your go-to solution for a wide range of tasks, from answering questions and providing insights to offering assistance and entertainment. In this document, we'll introduce you to the exciting world of Yoda AI and guide you through getting started.
 
 
-<img src="/showcase/cli-2.png" width="100%" />
+<img src="/showcase/best-cli.png" width="100%" />
 
 
 
@@ -69,6 +69,10 @@ Replace `<path-to-the-yodaai-cli-project-directory>` with the directory you clon
 
 
 You're done. Enjoy `Yoda CLI` now.
+
+<img src="/showcase/cli-2.png" width="100%" />
+
+
 
 ## Extras
 I build a similar API to this in Golang and NodeJS. You can find it here in my github.
